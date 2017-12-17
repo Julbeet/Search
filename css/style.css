@@ -36,55 +36,58 @@ button{
 	width: 80px;
 	height: 80px;
 }
-/* .columns{
-	font-size: 0px;
-} */
+
 .col{
 	display: inline-block;
 	width: 30%;
 	font-size: 0;
 	vertical-align: top;
 	margin: 5px;
-	background-color: #220033;
 }
 .col__list{
 	font-size: 14px;
 	padding: 0;
-	
-	
 }
 .col:not(:last-child){
 	margin-right: 3%;
 }
 
 .col__header{
-	text-align: center;
 	font-size: 14px;
-
+	text-transform: uppercase;
 }
 .col__list li{
 	list-style: none;
 	background-color: #ebebed;
 	font-size: 14px;
 	margin: 5px 0;
-
+	border-radius: 5px;
 }
+ .col__list li:hover,
+ .col__list li:focus,
+ .col__list li:active{
+ 	background-color: rgba(118,117,128,0.1);
+ }
 
-.col:first-child li img{
-	width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+.col__list img{
+	width: 35px;
+    height: 35px;
+    margin: 10px;
     vertical-align: middle;
 }
-.col__list img{
-	vertical-align: middle;
-        margin-right: 10px;
-}
+.col:first-child li img{
+    border-radius: 50%;
+ }
 .col__list li a{
 	text-decoration: none;
 	vertical-align: center;
+	color:  #c2c2c2;
+	display: inline-block;
+	width: 100%;
 }
-.col__list p{
-	padding: 5px;
+.col__list li a:hover,
+.col__list li a:focus,
+.col__list li a:active{
+	color: #ec5a62;
 }
+
