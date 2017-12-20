@@ -15,6 +15,7 @@ body{
 }
 form{
 	font-size: 0;
+	margin-bottom: 30px;
 }
 input,
 button{
@@ -25,33 +26,33 @@ button{
 	border: 0;
 	padding: 0;
 	color: #ec5a62;
+	outline:  none;
 }
+
 input{
 	width: 80%;
 }
 button{
-	width: 20%
-}
-.magnifier{
 	width: 80px;
 	height: 80px;
+	background-image: url('../img/magnifier.svg');
+}
+button:hover{
+	transform: scale(1.2, 1.2);
 }
 
-.col{
-	display: inline-block;
-	width: 30%;
+.columns{
 	font-size: 0;
+}
+.col{
+	width: 33.3%;
+	display: inline-block;
 	vertical-align: top;
-	margin: 5px;
 }
 .col__list{
-	font-size: 14px;
 	padding: 0;
+	margin-right: 10%;
 }
-.col:not(:last-child){
-	margin-right: 3%;
-}
-
 .col__header{
 	font-size: 14px;
 	text-transform: uppercase;
@@ -60,7 +61,7 @@ button{
 	list-style: none;
 	background-color: #ebebed;
 	font-size: 14px;
-	margin: 5px 0;
+	margin: 10px 0;
 	border-radius: 5px;
 }
  .col__list li:hover,
@@ -70,20 +71,29 @@ button{
  }
 
 .col__list img{
-	width: 35px;
-    height: 35px;
-    margin: 10px;
+	max-width: 50px;
+	width: 30%;
+	margin-right: 15px;
     vertical-align: middle;
 }
-.col:first-child li img{
+.col__list span{
+	width: 70%;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.8;
+	max-height: 50px;
+	overflow: hidden;
+}
+.round{
     border-radius: 50%;
  }
 .col__list li a{
 	text-decoration: none;
-	vertical-align: center;
+	vertical-align: middle;
 	color:  #c2c2c2;
 	display: inline-block;
 	width: 100%;
+	padding: 15px;
 }
 .col__list li a:hover,
 .col__list li a:focus,
